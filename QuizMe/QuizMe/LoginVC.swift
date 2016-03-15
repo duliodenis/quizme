@@ -9,7 +9,7 @@
 import UIKit
 import pop
 
-class ViewController: UIViewController {
+class LoginVC: UIViewController {
 
 }
 
