@@ -13,6 +13,8 @@
 		6C090DB51C986788008C9FB1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C090DB31C986788008C9FB1 /* Main.storyboard */; };
 		6C090DB71C986788008C9FB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C090DB61C986788008C9FB1 /* Assets.xcassets */; };
 		6C090DBA1C986788008C9FB1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C090DB81C986788008C9FB1 /* LaunchScreen.storyboard */; };
+		6C090DC81C98822D008C9FB1 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C090DC71C98822D008C9FB1 /* CustomTextField.swift */; };
+		6C090DCA1C9891D8008C9FB1 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C090DC91C9891D8008C9FB1 /* CustomButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,8 @@
 		6C090DB91C986788008C9FB1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6C090DBB1C986788008C9FB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6C090DC11C986998008C9FB1 /* QuizMe-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "QuizMe-Bridging-Header.h"; sourceTree = "<group>"; };
+		6C090DC71C98822D008C9FB1 /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomTextField.swift; path = Views/CustomTextField.swift; sourceTree = "<group>"; };
+		6C090DC91C9891D8008C9FB1 /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomButton.swift; path = Views/CustomButton.swift; sourceTree = "<group>"; };
 		A02271E2B5D4E2411D989C82 /* Pods-QuizMe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuizMe.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QuizMe/Pods-QuizMe.debug.xcconfig"; sourceTree = "<group>"; };
 		EFC748317B14A9958AC5AA66 /* Pods_QuizMe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuizMe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -70,15 +74,41 @@
 		6C090DAE1C986788008C9FB1 /* QuizMe */ = {
 			isa = PBXGroup;
 			children = (
-				6C090DAF1C986788008C9FB1 /* AppDelegate.swift */,
-				6C090DB11C986788008C9FB1 /* LoginVC.swift */,
-				6C090DB31C986788008C9FB1 /* Main.storyboard */,
+				6C090DC51C9881A6008C9FB1 /* Views */,
+				6C090DC41C98819C008C9FB1 /* Controller */,
+				6C090DC61C9881D9008C9FB1 /* Infrastructure */,
 				6C090DB61C986788008C9FB1 /* Assets.xcassets */,
-				6C090DB81C986788008C9FB1 /* LaunchScreen.storyboard */,
-				6C090DBB1C986788008C9FB1 /* Info.plist */,
-				6C090DC11C986998008C9FB1 /* QuizMe-Bridging-Header.h */,
 			);
 			path = QuizMe;
+			sourceTree = "<group>";
+		};
+		6C090DC41C98819C008C9FB1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6C090DB11C986788008C9FB1 /* LoginVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		6C090DC51C9881A6008C9FB1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6C090DB31C986788008C9FB1 /* Main.storyboard */,
+				6C090DB81C986788008C9FB1 /* LaunchScreen.storyboard */,
+				6C090DC71C98822D008C9FB1 /* CustomTextField.swift */,
+				6C090DC91C9891D8008C9FB1 /* CustomButton.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		6C090DC61C9881D9008C9FB1 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				6C090DBB1C986788008C9FB1 /* Info.plist */,
+				6C090DC11C986998008C9FB1 /* QuizMe-Bridging-Header.h */,
+				6C090DAF1C986788008C9FB1 /* AppDelegate.swift */,
+			);
+			name = Infrastructure;
 			sourceTree = "<group>";
 		};
 		8CF3218988AD397DF0EE1EFB /* Pods */ = {
@@ -212,6 +242,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C090DCA1C9891D8008C9FB1 /* CustomButton.swift in Sources */,
+				6C090DC81C98822D008C9FB1 /* CustomTextField.swift in Sources */,
 				6C090DB21C986788008C9FB1 /* LoginVC.swift in Sources */,
 				6C090DB01C986788008C9FB1 /* AppDelegate.swift in Sources */,
 			);
