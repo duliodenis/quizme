@@ -19,7 +19,7 @@ class Card: UIView {
     
     @IBOutlet weak var shapeImage: UIImageView!
     
-    @IBInspectable var cornerRadius: CGFloat = 4.0 {
+    @IBInspectable var cornerRadius: CGFloat = 6.0 {
         didSet {
             setupView()
         }
@@ -36,6 +36,7 @@ class Card: UIView {
     }
     
     func setupView() {
+        layer.cornerRadius  = cornerRadius
         layer.shadowOpacity = 0.8
         layer.shadowRadius  = 5.0
         layer.shadowOffset  = CGSizeMake(0.0, 2.0)
